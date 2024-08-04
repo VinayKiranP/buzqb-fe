@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import BusinessListComponent from './components/business/BusinessListComponent';
+import BusinessAddComponent from './components/business/BusinessAddComponent';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <br/>
+      <Router>
+        <div className="container">
+          <Routes>
+            <Route path='/business' element={<BusinessListComponent/>}></Route>
+            <Route path='/add-business' element={<BusinessAddComponent/>}></Route>
+            <Route path='/edit-business/:id' element={<BusinessAddComponent/>}></Route>
+          </Routes>
+        </div>
+      </Router>
     </div>
   );
 }
