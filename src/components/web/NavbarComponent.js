@@ -47,6 +47,7 @@ const NavbarComponent = () => {
       name: "cart",
     },
   ];
+
   return (
     <nav>
       <div className="nav-logo-container">
@@ -76,7 +77,7 @@ const NavbarComponent = () => {
         <a href="">
           <BsCart2 className="navbar-cart-icon" />
         </a>
-        <button className="primary-button">Bookings Now</button>
+        <button className="primary-button">Register Now</button>
       </div>
       <div className="navbar-menu-container">
         <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
