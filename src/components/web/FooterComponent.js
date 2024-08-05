@@ -21,17 +21,15 @@ const FooterComponent = () => {
       </div>
       <div className="footer-section-two">
         <div className="footer-section-columns">
-          <span>Qualtiy</span>
           <span>Help</span>
           <span>Share</span>
-          <span>Carrers</span>
-          <span>Testimonials</span>
+          <span>Connect</span>
           <span>Work</span>
         </div>
         <div className="footer-section-columns">
           <span>244-5333-7783</span>
-          <span>hello@buzqb.com</span>
-          <span>press@buzqb.com</span>
+          <span></span>
+          <span></span>
           <span>contact@buzqb.com</span>
         </div>
         <div className="footer-section-columns">

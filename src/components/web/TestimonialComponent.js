@@ -1,5 +1,5 @@
 import React from "react";
-import ProfilePic from "../../Assets/john-doe-image.png";
+import ProfilePic from "../../Assets/vk-black.png";
 import { AiFillStar } from "react-icons/ai";
 
 const TestimonialComponent = () => {
@@ -9,15 +9,14 @@ const TestimonialComponent = () => {
         <p className="primary-subheading">Testimonial</p>
         <h1 className="primary-heading">What They Are Saying</h1>
         <p className="primary-text">
-          Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et
-          elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.
+          buzQB Helped me to List my small scale General Store Business in an Online Platform.
         </p>
       </div>
       <div className="testimonial-section-bottom">
         <img src={ProfilePic} alt="" />
         <p>
-          Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et
-          elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.
+          buzQB Maintaining our Listing and Profiling at zero cost and Hassel free.
+          I can now share my profile in my Locality and in Google Map's also.
         </p>
         <div className="testimonials-stars-container">
           <AiFillStar />

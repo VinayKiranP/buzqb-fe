@@ -7,18 +7,18 @@ const WorkComponent = () => {
   const workInfoData = [
     {
       image: PickMeals,
-      title: "Pick Meals",
-      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et sagittis duis elementum interdum facilisi bibendum.",
+      title: "No Extra Cost",
+      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et.",
     },
     {
       image: ChooseMeals,
-      title: "Choose How Often",
-      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et ",
+      title: "One-Stop Solution",
+      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et.",
     },
     {
       image: DeliveryMeals,
-      title: "Fast Deliveries",
-      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et lorem ipsum",
+      title: "Listing Delivered",
+      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et.",
     },
   ];
   return (
@@ -27,8 +27,8 @@ const WorkComponent = () => {
         <p className="primary-subheading">Work</p>
         <h1 className="primary-heading">How It Works</h1>
         <p className="primary-text">
-          Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et
-          elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.
+          We are Taking your basic information to List your Business and host in our site,
+          for Profiling and Listing, so that customers can find & Trust your Business.
         </p>
       </div>
       <div className="work-section-bottom">

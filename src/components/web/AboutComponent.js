@@ -15,15 +15,13 @@ const AboutComponent = () => {
       <div className="about-section-text-container">
         <p className="primary-subheading">About</p>
         <h1 className="primary-heading">
-          Food Is An Important Part Of A Balanced Diet
+          buzQB - Business Listing Platform
         </h1>
         <p className="primary-text">
-          Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et
-          elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.
+          Your Business now a days is growing like never before.
         </p>
         <p className="primary-text">
-          Non tincidunt magna non et elit. Dolor turpis molestie dui magnis
-          facilisis at fringilla quam.
+          We are taking care on your business Listing and Maintain at a Zero Cost
         </p>
         <div className="about-buttons-container">
           <button className="secondary-button">Learn More</button>
