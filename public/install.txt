@@ -1,0 +1,12 @@
+npm install bootstrap --save
+npm install react-router-dom
+npm install axios --save
+npm install react-icons --save
+npm install @mui/system @emotion/react @emotion/styled
+npm install @mui/icons-material
+npm install react-scroll
+
+
+# Application Running
+npm start
+npm start dev
