@@ -4,6 +4,7 @@ import { BsTwitter } from "react-icons/bs";
 import { SiLinkedin } from "react-icons/si";
 import { BsYoutube } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
+import { Link as Redirect } from 'react-router-dom';
 
 const FooterComponent = () => {
   return (
@@ -21,10 +22,18 @@ const FooterComponent = () => {
       </div>
       <div className="footer-section-two">
         <div className="footer-section-columns">
-          <span>Help</span>
-          <span>Share</span>
-          <span>Connect</span>
-          <span>Work</span>
+          <span>
+            <Redirect to="">Home</Redirect>
+          </span>
+          <span>
+            <Redirect to="/share">Share</Redirect>
+          </span>
+          <span>
+            <Redirect to="/connect">Connect</Redirect>
+          </span>
+          <span>
+            <Redirect to="">Work</Redirect>
+          </span>
         </div>
         <div className="footer-section-columns">
           <span>244-5333-7783</span>
@@ -33,8 +42,12 @@ const FooterComponent = () => {
           <span>contact@buzqb.com</span>
         </div>
         <div className="footer-section-columns">
-          <span>Terms & Conditions</span>
-          <span>Privacy Policy</span>
+          <span>
+            <Redirect to="/terms-condition">Terms & Conditions</Redirect>
+          </span>
+          <span>
+            <Redirect to="/privacy-policy">Privacy Policy</Redirect>
+          </span>
         </div>
       </div>
     </div>
