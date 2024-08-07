@@ -17,6 +17,7 @@ import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
 import { Link } from "react-scroll";
+import { Link as Redirect } from 'react-router-dom';
 
 const NavbarComponent = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -54,30 +55,19 @@ const NavbarComponent = () => {
         <img src={Logo} alt="" />
       </div>
       <div className="navbar-links-container">
-        <a href="">
           <Link to="home" smooth={true} duration={300}>
             Home
           </Link>
-        </a>
-        <a href="">
           <Link to="about" smooth={true} duration={300}>
             About
           </Link>
-        </a>
-        <a href="">
           <Link to="testimonials" smooth={true} duration={300}>
           Testimonials
           </Link>
-        </a>
-        <a href="">
           <Link to="contact" smooth={true} duration={300}>
           Contact
           </Link>
-        </a>
-        <a href="">
-          <BsCart2 className="navbar-cart-icon" />
-        </a>
-        <button className="primary-button">Register Now</button>
+          <Redirect to="/add-business" className="primary-button">Register Now</Redirect>
       </div>
       <div className="navbar-menu-container">
         <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
