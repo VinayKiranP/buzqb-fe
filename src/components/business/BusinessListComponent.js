@@ -37,7 +37,7 @@ const deleteBusiness = (id) => {
           <th>Id</th>
           <th>Username</th>
           <th>Name</th>
-          <th>Pincode</th>
+          <th>City - Pincode</th>
           <th>Action</th>
         </thead>
         <tbody>
@@ -46,7 +46,7 @@ const deleteBusiness = (id) => {
               <td>{business.id}</td>
               <td>{business.username}</td>
               <td>{business.name}</td>
-              <td>{business.pincode}</td>
+              <td>{business.city} {business.city}- {business.pincode}</td>
               <td>
                   <Link className="btn btn-info" to={`/edit-business/${business.id}`} >Update</Link>
                   <button className = "btn btn-danger" onClick = {() => deleteBusiness(business.id)}

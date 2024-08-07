@@ -4,7 +4,15 @@ import BusinessService from '../../services/business/BusinessService';
 
 const BusinessAddComponent = () => {
     const [name, setName] = useState('');
+    const [mobile, setMobile] = useState('');
+    const [email, setEmail] = useState('');
     const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
+    const [confirmPassword, setConfirmPassword] = useState('');
+    const [addressLine1, setAddressLine1] = useState('');
+    const [addressLine2, setAddressLine2] = useState('');
+    const [landmark, setLandmark] = useState('');
+    const [city, setCity] = useState('');
     const [pincode, setPincode] = useState('');
     const navigate = useNavigate();
     const {id} = useParams();
@@ -12,7 +20,7 @@ const BusinessAddComponent = () => {
     const saveOrUpdateBusiness = (e) => {
         e.preventDefault();
 
-        const business = {name, username, pincode, status:"active"}
+        const business = {name, email, mobile, username, password, addressLine1, addressLine2, landmark, city, pincode, status:"active"}
 
         if(id){
             BusinessService.saveOrUpdateBusiness(id, business).then((response) => {
@@ -35,6 +43,13 @@ const BusinessAddComponent = () => {
         BusinessService.getBusinessById(id).then((response) =>{
             setName(response.data.data.name)
             setUsername(response.data.data.username)
+            setMobile(response.data.data.mobile)
+            setEmail(response.data.data.email)
+            setPassword(response.data.data.password)
+            setAddressLine1(response.data.data.addressLine1)
+            setAddressLine2(response.data.data.addressLine2)
+            setLandmark(response.data.data.landmark)
+            setCity(response.data.data.city)
             setPincode(response.data.data.pincode)
         }).catch(error => {
             console.log(error)
@@ -69,6 +84,26 @@ const BusinessAddComponent = () => {
                         </div>
 
                         <div className="form-group md-2">
+                            <label className="form-label" for="mobile">Mobile:</label>
+                            <input
+                             type="text"
+                             placeholder="8880000088"
+                             className="form-control" 
+                             id="mobile" value={mobile} 
+                             onChange={(e) => setMobile(e.target.value)} />
+                        </div>
+
+                        <div className="form-group md-2">
+                            <label className="form-label" for="email">Email:</label>
+                            <input
+                             type="text"
+                             placeholder="vk888@gmail.com"
+                             className="form-control" 
+                             id="email" value={email} 
+                             onChange={(e) => setEmail(e.target.value)} />
+                        </div>
+                        
+                        <div className="form-group md-2">
                             <label className="form-label" for="username">Username:</label>
                             <input
                              type="text"
@@ -76,6 +111,69 @@ const BusinessAddComponent = () => {
                              className="form-control" 
                              id="username" value={username} 
                              onChange={(e) => setUsername(e.target.value)} />
+                        </div>
+
+                        <div className="form-group md-2">
+                            <label className="form-label" for="password">Password:</label>
+                            <input
+                             type="password"
+                             placeholder="123@buzQB"
+                             className="form-control" 
+                             id="password" value={password} 
+                             onChange={(e) => setPassword(e.target.value)} />
+                        </div>
+
+                        <div className="form-group md-2">
+                            <label className="form-label" for="confirmPassword">Confirm Password:</label>
+                            <input
+                             type="text"
+                             placeholder="123@buzQB"
+                             className="form-control" 
+                             id="confirmPassword" value={confirmPassword} 
+                             onChange={(e) => setConfirmPassword(e.target.value)} />
+                        </div>
+
+                        <hr></hr>
+                        <h6>Address</h6>
+
+                        <div className="form-group md-2">
+                            <label className="form-label" for="addressLine1">Address Line1:</label>
+                            <input
+                             type="text"
+                             placeholder="#88/1, 1st Floor, 3rd Cross, 4th Main"
+                             className="form-control" 
+                             id="addressLine1" value={addressLine1} 
+                             onChange={(e) => setAddressLine1(e.target.value)} />
+                        </div>
+
+                        <div className="form-group md-2">
+                            <label className="form-label" for="addressLine2">Address Line2:</label>
+                            <input
+                             type="text"
+                             placeholder="2nd Stage, Basaveshwara Nagara, Bengaluru"
+                             className="form-control" 
+                             id="addressLine2" value={addressLine2} 
+                             onChange={(e) => setAddressLine2(e.target.value)} />
+                        </div>
+
+                        <div className="form-group md-2">
+                            <label className="form-label" for="landmark">Landmark:</label>
+                            <input
+                             type="text"
+                             placeholder="2nd Stage, Basaveshwara Nagara, Bengaluru"
+                             className="form-control" 
+                             id="landmark" value={landmark} 
+                             onChange={(e) => setLandmark(e.target.value)} />
+                        </div>
+
+                        <div className="form-group md-2">
+                            <label className="form-label" for="city">City:</label>
+                            <input
+                             type="text"
+                             placeholder="Bengaluru"
+                             className="form-control" 
+                             id="city" value={city} 
+                             onChange={(e) => setCity(e.target.value)} />
                         </div>
 
                         <div className="form-group md-2">
