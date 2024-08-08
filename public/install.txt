@@ -5,6 +5,7 @@ npm install react-icons --save
 npm install @mui/system @emotion/react @emotion/styled
 npm install @mui/icons-material
 npm install react-scroll
+npm install @mui/material
 
 
 # Application Running

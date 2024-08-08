@@ -2,11 +2,19 @@ import React, { useEffect, useState } from 'react'
 import BusinessService from '../../services/business/BusinessService';
 import { Link } from 'react-router-dom';
 import Loader from '../utils/Loader';
+import Button from '@mui/material/Button';
+import Dialog from '@mui/material/Dialog';
+import DialogActions from '@mui/material/DialogActions';
+import DialogContent from '@mui/material/DialogContent';
+import DialogContentText from '@mui/material/DialogContentText';
+import DialogTitle from '@mui/material/DialogTitle';
 
 const BusinessListComponent = () => {
   
   const[businessList, setBusinessList] = useState([]);
   const[loading, setLoading] = useState(true);
+  const [open, setOpen] = useState(false);
+  const [id, setId] = useState();
 
   useEffect(() => {
     getAllBusinesses();
@@ -23,15 +31,29 @@ const BusinessListComponent = () => {
 }
 console.log(setBusinessList);
 
-const deleteBusiness = (id) => {
-   BusinessService.deleteBusiness(id).then((response) =>{
+const deleteBusiness = () => {
+  console.log(setId);
+  handleClose();
+  setLoading(true);
+   BusinessService.deleteBusiness(setId).then((response) =>{
     getAllBusinesses();
    }).catch(error =>{
        console.log(error);
+       setLoading(false);
    })
 }
+
+  const handleClickOpen = (id) => {
+    setId(id);
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
   
   return (
+    <>
     <div className="container">
     { loading && <Loader/> }
     <h2>Business</h2>
@@ -52,15 +74,36 @@ const deleteBusiness = (id) => {
               <td>{business.name}</td>
               <td>{business.city} {business.city}- {business.pincode}</td>
               <td>
-                  <Link className="btn btn-info" to={`/edit-business/${business.id}`} >Update</Link>
-                  <button className = "btn btn-danger" onClick = {() => deleteBusiness(business.id)}
-                  style = {{marginLeft:"10px"}}> Delete</button>
+                  <Link className="btn btn-info" variant="outlined" to={`/edit-business/${business.id}`} >Update</Link>
+                  <Button className = "btn btn-danger"  variant="outlined"
+                   onClick={() => handleClickOpen(business.id)}> Delete</Button>
               </td>
             </tr>
           ))}
         </tbody>
       </table>    
     </div>
+    <Dialog
+      open={open}
+      onClose={handleClose}
+      aria-labelledby="alert-dialog-title"
+      aria-describedby="alert-dialog-description">
+      <DialogTitle id="alert-dialog-title">
+        {"Do you really want to delete the Business..?"}
+      </DialogTitle>
+      <DialogContent>
+        <DialogContentText id="alert-dialog-description">
+          Click <b>Confirm</b> To Delete the Bsiness, Close to <b>Cancel</b>.
+        </DialogContentText>
+      </DialogContent>
+      <DialogActions>
+        <Button onClick={handleClose}>Close</Button>
+        <Button onClick={deleteBusiness} autoFocus>
+          Confirm
+        </Button>
+      </DialogActions>
+    </Dialog>
+  </>
   )
 }
 

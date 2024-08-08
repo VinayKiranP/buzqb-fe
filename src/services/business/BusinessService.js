@@ -20,7 +20,7 @@ class BusinessService {
     }
 
     deleteBusiness(id){
-        return axios.patch(BASE_URL + '/' + id);
+        return axios.delete(BASE_URL + '/' + id);
     }
 }
 
