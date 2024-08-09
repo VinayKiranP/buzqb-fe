@@ -74,9 +74,9 @@ const deleteBusiness = () => {
               <td>{business.name}</td>
               <td>{business.city} {business.city}- {business.pincode}</td>
               <td>
-                  <Link className="btn btn-info" variant="outlined" to={`/edit-business/${business.id}`} >Update</Link>
-                  <Button className = "btn btn-danger"  variant="outlined"
-                   onClick={() => handleClickOpen(business.id)}> Delete</Button>
+                  <Link className="btn btn-danger" variant="outlined" to={`/edit-business/${business.id}`} >Update</Link>
+                  {/* <Button className = "btn btn-danger"  variant="outlined"
+                   onClick={() => handleClickOpen(business.id)}> Delete</Button> */}
               </td>
             </tr>
           ))}

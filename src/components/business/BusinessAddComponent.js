@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import {Link, useNavigate, useParams } from 'react-router-dom';
 import BusinessService from '../../services/business/BusinessService';
+import Button from '@mui/material/Button';
 
 const BusinessAddComponent = () => {
     const [name, setName] = useState('');
@@ -186,8 +187,8 @@ const BusinessAddComponent = () => {
                              onChange={(e) => setPincode(e.target.value)} />
                         </div>
                         <br/>
-                        <button className = "btn btn-success" onClick = {(e) => saveOrUpdateBusiness(e)} >Submit </button>
-                        <Link to="/business" className="btn btn-danger"> Cancel </Link>
+                        <Button className = "btn btn-success" onClick = {(e) => saveOrUpdateBusiness(e)} >Submit </Button>
+                        <Link to="/business" className="btn btn-success"> Cancel </Link>
 
                     </form>
                 </div>
