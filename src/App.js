@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import BusinessListComponent from './components/business/BusinessListComponent';
 import BusinessAddComponent from './components/business/BusinessAddComponent';
 import WebComponent from './components/web/WebComponent';
+import SidebarComponent from './components/sidebar/SidebarComponent';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <div className="container">
           <Routes>
             <Route path='' element={<WebComponent/>}></Route>
+            <Route path='/sidebar' element={<SidebarComponent/>}></Route>
             <Route path='/business' element={<BusinessListComponent/>}></Route>
             <Route path='/add-business' element={<BusinessAddComponent/>}></Route>
             <Route path='/edit-business/:id' element={<BusinessAddComponent/>}></Route>
