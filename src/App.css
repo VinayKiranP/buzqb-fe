@@ -86,7 +86,6 @@ nav {
 .primary-heading {
   font-size: clamp(2rem, 5vw, 4rem);
   color: #4c4c4c;
-  /* line-height: 5rem; */
   max-width: 600px;
 }
 .primary-text {
@@ -211,9 +210,9 @@ nav {
   margin-right: 1.25rem;
   color: #585858;
 }
-/* .footer-section-one {
+.footer-section-one {
   border: 2px solid blue;
-} */
+}
 .footer-section-two {
   flex: 1;
   display: flex;
@@ -451,5 +450,21 @@ nav {
 }
 
 .toggle {
-  margin-left: 15px;
+  margin-left: 8px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-icon {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  border-radius: 20%;
 }

@@ -11,6 +11,7 @@ import {
 } from '@ant-design/icons';
 
 const MenuListComponent = ({darkTheme}) => {
+    console.log(darkTheme);
   return (
     <Menu theme={darkTheme ? 'dark' : 'light'} mode="inline" className="menu-bar">
         <Menu.Item key="business" icon={<HomeOutlined/>}>
