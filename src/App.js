@@ -4,6 +4,7 @@ import BusinessListComponent from './components/business/BusinessListComponent';
 import BusinessAddComponent from './components/business/BusinessAddComponent';
 import WebComponent from './components/web/WebComponent';
 import SidebarComponent from './components/sidebar/SidebarComponent';
+import LoginComponent from './components/auth/LoginComponent';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Routes>
             <Route path='' element={<WebComponent/>}></Route>
             <Route path='/sidebar' element={<SidebarComponent/>}></Route>
+            <Route path='/login' element={<LoginComponent/>}></Route>
             <Route path='/business' element={<BusinessListComponent/>}></Route>
             <Route path='/add-business' element={<BusinessAddComponent/>}></Route>
             <Route path='/edit-business/:id' element={<BusinessAddComponent/>}></Route>

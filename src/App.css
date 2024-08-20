@@ -426,14 +426,15 @@ nav {
   }
 }
 
+
 .sidebar {
   color: #fff;
 }
 
 .menu-bar {
-  height: 88vh;
+  height: 80vh;
   margin-top: 2rem;
-  display: flex;
+  display: list-item;
   gap: 15px;
   font-size: 1rem;
   position: relative;
