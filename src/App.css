@@ -211,7 +211,7 @@ nav {
   color: #585858;
 }
 .footer-section-one {
-  border: 2px solid blue;
+  border: 2px none;
 }
 .footer-section-two {
   flex: 1;
@@ -461,8 +461,8 @@ nav {
 }
 
 .logo-icon {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;

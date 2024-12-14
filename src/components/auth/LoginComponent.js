@@ -1,12 +1,22 @@
 import React, { useState } from "react";
 import { styled } from "styled-components";
 import { Navigate } from "react-router-dom";
+import LoginService from '../../services/login/LoginService';
 
 function LoginComponent({ login }) {
     const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [navigate, setNavigate] = useState(false);
   const LOGIN_URL = "http://localhost:8080/auth/login";
+
+  const handleLoginWithGoogle = () => {
+    LoginService.loginWithGoogle().then((response) => {
+        console.log(response.data);
+    }).catch(error =>{
+        console.log(error);
+    })
+}
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const requestOptions = {
@@ -62,16 +72,19 @@ function LoginComponent({ login }) {
         <Button>Login</Button>
         <button onClick={handleLogout}>Logout</button>
       </Form>
+      <div className="">
+              <a onClick={handleLoginWithGoogle()}>Sign in with Google</a>
+      </div>
       </LoginContainer>
     </div>
   )
 }
 const LoginContainer = styled.section`
-  border: 1px solid black;
+  border: 1px solid silver;
   height: 400px;
   width: 350px;
   margin: 100px auto;
-  border-radius: 12px;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
