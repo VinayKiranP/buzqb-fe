@@ -1,4 +1,5 @@
 import React from "react";
+import { Link as Redirect } from 'react-router-dom';
 import BannerBackground from "../../Assets/home-background.svg";
 import BannerImage from "../../Assets/home-background-image.png";
 import Navbar from "./NavbarComponent";
@@ -20,9 +21,8 @@ const HomeComponent = () => {
             List Your Business on buzQB On Free Of Cost,
             & We Have Solotion for marinating your Sales Records, is Our Responsibility.
           </p>
-          <button className="secondary-button">
-            Register Now <FiArrowRight />{" "}
-          </button>
+          <Redirect to="/add-business" className="secondary-button">Register Now <FiArrowRight />{" "}
+          </Redirect>
         </div>
         <div className="home-image-section">
           <img src={BannerImage} alt="" />
