@@ -3,7 +3,6 @@ import {Link, useNavigate, useParams } from 'react-router-dom';
 import BusinessService from '../../services/business/BusinessService';
 import Button from '@mui/material/Button';
 import NavbarComponent from '../web/NavbarComponent';
-import NavbarComponent from '../web/NavbarComponent';
 
 const BusinessAddComponent = () => {
     const [name, setName] = useState('');
@@ -202,7 +201,6 @@ const BusinessAddComponent = () => {
 
         </div>
 
-    </div>
     </div>
     </div>
 

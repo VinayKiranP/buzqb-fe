@@ -10,6 +10,7 @@ img {
 }
 .App {
   min-height: 100vh;
+  width: 85vw;
   max-width: 1900px;
   margin: 0rem auto;
 }
@@ -29,7 +30,6 @@ nav {
   min-height: 90px;
 }
 .navbar-menu-container {
-  width: 100%;
   display: none;
 }
 .navbar-links-container a {
@@ -195,9 +195,9 @@ nav {
   padding: 0.5rem 1rem;
 }
 .footer-wrapper {
-  width: 100%;
-  margin: 4rem 0rem;
+  margin: 6rem 0rem;
   display: flex;
+  margin-top: 10rem;
 }
 .footer-logo-container {
   max-width: 110px;
@@ -211,7 +211,7 @@ nav {
   color: #585858;
 }
 .footer-section-one {
-  border: 2px none;
+  border: 2px solid none;
 }
 .footer-section-two {
   flex: 1;
@@ -222,7 +222,6 @@ nav {
   display: flex;
   flex-direction: column;
   min-width: 190px;
-  font-weight: lighter;
 }
 .footer-section-columns span {
   margin: 0.25rem 0rem;
@@ -462,8 +461,8 @@ nav {
 }
 
 .logo-icon {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
