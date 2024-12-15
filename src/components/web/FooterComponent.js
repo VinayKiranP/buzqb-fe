@@ -8,17 +8,26 @@ import { Link as Redirect } from 'react-router-dom';
 
 const FooterComponent = () => {
   return (
+    <div>
+    <hr/>
     <div className="footer-wrapper">
       <div className="footer-section-one">
         <div className="footer-logo-container">
           <img src={Logo} alt="" />
         </div>
-        <div className="footer-icons">
+        <br/>
+        <div className="footer-section-columns">
+          <span>#36, 1st Main, Maruthi Layout,</span>
+          <span>Behind malleshwaram Railway Station,</span>
+          <span>Bengaluru - 560021 | Katnataka (India)</span>
+          <span>contact@buzqb.com</span>
+        </div>
+        {/* <div className="footer-icons">
           <BsTwitter />
           <SiLinkedin />
           <BsYoutube />
           <FaFacebookF />
-        </div>
+        </div> */}
       </div>
       <div className="footer-section-two">
         <div className="footer-section-columns">
@@ -36,12 +45,9 @@ const FooterComponent = () => {
           </span>
         </div>
         <div className="footer-section-columns">
-          <span>244-5333-7783</span>
-          <span></span>
-          <span></span>
-          <span>contact@buzqb.com</span>
-        </div>
-        <div className="footer-section-columns">
+          <span>
+            Consumer Policy
+          </span>
           <span>
             <Redirect to="/terms-condition">Terms & Conditions</Redirect>
           </span>
@@ -49,7 +55,14 @@ const FooterComponent = () => {
             <Redirect to="/privacy-policy">Privacy Policy</Redirect>
           </span>
         </div>
+        <div className="footer-section-columns">
+          <span><FaFacebookF /> Facebook</span>
+          <span><BsYoutube /> Youtube</span>
+          <span><BsTwitter /> Twitter</span>
+          <span><SiLinkedin /> LinkedIn</span>
+        </div>
       </div>
+    </div>
     </div>
   );
 };

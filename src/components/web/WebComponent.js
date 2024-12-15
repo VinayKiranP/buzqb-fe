@@ -8,14 +8,16 @@ import FooterComponent  from './FooterComponent';
 
 const WebComponent = () => {
   return (
-    <div>
-        <HomeComponent/>
-        <AboutComponent/>
-        <TestimonialComponent/>
-        <ContactComponent/>
-        <WorkComponent/>
-        <FooterComponent/>
-    </div>
+    <main>
+      <div>
+          <HomeComponent/>
+          <AboutComponent/>
+          <TestimonialComponent/>
+          <ContactComponent/>
+          <WorkComponent/>
+          <FooterComponent/>
+      </div>
+    </main>
   )
 }
 
