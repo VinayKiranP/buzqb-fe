@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <br/>
       <Router>
-        <div className="container">
+        <div>
           <Routes>
             <Route path='' element={<WebComponent/>}></Route>
             <Route path='/sidebar' element={<SidebarComponent/>}></Route>

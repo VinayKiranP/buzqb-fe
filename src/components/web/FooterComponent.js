@@ -8,7 +8,7 @@ import { Link as Redirect } from 'react-router-dom';
 
 const FooterComponent = () => {
   return (
-    <div>
+    <div className="footer-aa">
     <hr/>
     <div className="footer-wrapper">
       <div className="footer-section-one">
