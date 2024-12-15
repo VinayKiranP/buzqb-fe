@@ -7,18 +7,18 @@ const WorkComponent = () => {
   const workInfoData = [
     {
       image: PickMeals,
-      title: "No Extra Cost",
-      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et.",
+      title: "At No Extra Cost",
+      text: "Listing Your Business at Your Fingertips at No Extra Cost, A Signup Away",
     },
     {
       image: ChooseMeals,
       title: "One-Stop Solution",
-      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et.",
+      text: "Manage your Stock Items and Billing in one Platform Securely without Hassle.",
     },
     {
       image: DeliveryMeals,
       title: "Listing Delivered",
-      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et.",
+      text: "Your Business Delivered to You Securely By Best Engineers In The Business.",
     },
   ];
   return (

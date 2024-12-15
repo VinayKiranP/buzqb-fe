@@ -28,7 +28,7 @@ const SidebarComponent = () => {
         className="sidebar" 
         theme={ darkTheme ? 'dark' : 'light'}>
           <div className="logo">
-            <img src={Logo} alt="" className="logo-icon"/>
+            <img src={Logo} alt="Home" className="logo-icon"/>
           </div>
           <MenuListComponent darkTheme={darkTheme}/>
           <ToggleThemeButtonComponent darkTheme={darkTheme} toggleTheme={toggleTheme}/>

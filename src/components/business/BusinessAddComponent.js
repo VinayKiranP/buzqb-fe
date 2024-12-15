@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import {Link, useNavigate, useParams } from 'react-router-dom';
 import BusinessService from '../../services/business/BusinessService';
 import Button from '@mui/material/Button';
+import NavbarComponent from '../web/NavbarComponent';
 
 const BusinessAddComponent = () => {
     const [name, setName] = useState('');
@@ -68,6 +69,8 @@ const BusinessAddComponent = () => {
 
 
   return (
+    <div>
+    <NavbarComponent/>
     <div className="container">
         <div className="row">
             <div className="card col-md-6 offset-md-3 offset-md-3">
@@ -198,6 +201,7 @@ const BusinessAddComponent = () => {
 
         </div>
 
+    </div>
     </div>
   )
 }

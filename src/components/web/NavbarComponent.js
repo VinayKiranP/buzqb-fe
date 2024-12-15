@@ -49,7 +49,7 @@ const NavbarComponent = () => {
   ];
 
   return (
-    <nav>
+    <nav  id="header">
       <div className="nav-logo-container">
         <img src={Logo} alt="" />
       </div>

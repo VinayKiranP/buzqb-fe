@@ -8,6 +8,7 @@ import FooterComponent  from './FooterComponent';
 
 const WebComponent = () => {
   return (
+    <main>
     <div>
         <HomeComponent/>
         <AboutComponent/>
@@ -16,6 +17,7 @@ const WebComponent = () => {
         <WorkComponent/>
         <FooterComponent/>
     </div>
+  </main>
   )
 }
 
