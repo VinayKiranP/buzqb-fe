@@ -23,6 +23,7 @@ const FooterComponent = () => {
           <span>contact@buzqb.com</span>
         </div>
         {/* <div className="footer-icons">
+        <div className="footer-icons">
           <BsTwitter />
           <SiLinkedin />
           <BsYoutube />
@@ -45,7 +46,7 @@ const FooterComponent = () => {
           </span>
         </div>
         <div className="footer-section-columns">
-          <span>
+        <span>
             Consumer Policy
           </span>
           <span>

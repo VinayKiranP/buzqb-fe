@@ -9,15 +9,15 @@ import FooterComponent  from './FooterComponent';
 const WebComponent = () => {
   return (
     <main>
-      <div>
-          <HomeComponent/>
-          <AboutComponent/>
-          <TestimonialComponent/>
-          <ContactComponent/>
-          <WorkComponent/>
-          <FooterComponent/>
-      </div>
-    </main>
+    <div>
+        <HomeComponent/>
+        <AboutComponent/>
+        <TestimonialComponent/>
+        <ContactComponent/>
+        <WorkComponent/>
+        <FooterComponent/>
+    </div>
+  </main>
   )
 }
 

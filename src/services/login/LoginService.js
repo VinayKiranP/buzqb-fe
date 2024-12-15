@@ -7,5 +7,4 @@ class LoginService {
         return axios.get(BASE_URL.concat('/login'));
     }
 }
-
 export default new LoginService();
