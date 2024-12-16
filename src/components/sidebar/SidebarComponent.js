@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { Layout, Button as AntButton, theme } from 'antd';
 import MenuListComponent from '../sidebar/MenuListComponent';
 import ToggleThemeButtonComponent from '../sidebar/ToggleThemeButtonComponent';
 import { MenuUnfoldOutlined, MenuFoldOutlined } from '@ant-design/icons';
 import Logo from "../../Assets/Logo.svg";
+import BusinessListComponent from '../business/BusinessListComponent';
 import NavbarComponent from '../web/NavbarComponent';
-import ContactComponent from '../web/ContactComponent';
 
 const { Header, Sider } = Layout;
 const SidebarComponent = () => {
@@ -32,18 +32,18 @@ const SidebarComponent = () => {
           </div>
           <MenuListComponent darkTheme={darkTheme}/>
           <ToggleThemeButtonComponent darkTheme={darkTheme} toggleTheme={toggleTheme}/>
-        </Sider>
-        <Layout theme={ darkTheme ? 'dark' : 'light'}>
-          <Header style={{padding:0, background:colorBgContainer}}>
-            <NavbarComponent/>
-            <AntButton 
+          <AntButton 
             type="text" 
             className="toggle" 
             onClick={() => setCollapsed(!collapsed)}
             icon={ collapsed ? <MenuUnfoldOutlined/> : <MenuFoldOutlined/>}/>
+        </Sider>
+        <Layout theme={ darkTheme ? 'dark' : 'light'}>
+          <Header style={{padding:0, background:colorBgContainer}}>
+          <NavbarComponent/>
           </Header>
           <div className="">
-            <ContactComponent />
+            <BusinessListComponent/>
           </div>
         </Layout>
       </Layout>

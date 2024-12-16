@@ -12,7 +12,7 @@ function App() {
       <Router>
           <Routes>
             <Route path='' element={<WebComponent/>}></Route>
-            <Route path='/sidebar' element={<SidebarComponent/>}></Route>
+            <Route path='/dashboard' element={<SidebarComponent/>}></Route>
             <Route path='/login' element={<LoginComponent/>}></Route>
             <Route path='/business' element={<BusinessListComponent/>}></Route>
             <Route path='/add-business' element={<BusinessAddComponent/>}></Route>

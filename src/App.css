@@ -446,27 +446,27 @@ nav {
 
 .menu-bar {
   height: 80vh;
-  margin-top: 2rem;
   display: list-item;
-  gap: 15px;
   font-size: 1rem;
   position: relative;
 }
 
+.toggle {
+  position: absolute;
+  bottom: 80px;
+  left: 28px;
+  display: flex;
+  justify-content: center;
+}
 .toggle-theme-btn {
   position: absolute;
-  bottom: 30px;
+  bottom: 40px;
   left: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1rem;
 }
-
-.toggle {
-  margin-left: 8px;
-}
-
 .logo {
   display: flex;
   align-items: center;
@@ -475,7 +475,7 @@ nav {
 
 .logo-icon {
   width: 80px;
-  height: 80px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
