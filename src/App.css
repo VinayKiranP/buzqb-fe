@@ -27,7 +27,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 90px;
+  min-height: 10px;
 }
 .container-aa {
   padding-left: 1rem;
