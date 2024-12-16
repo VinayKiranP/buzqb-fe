@@ -7,7 +7,6 @@ import Logo from "../../Assets/Logo.svg";
 
 const { Header, Sider } = Layout;
 const SidebarComponent = () => {
-
   const [collapsed, setCollapsed] = useState(false);
   const [ darkTheme, setDarkTheme ] = useState(false);
   const toggleTheme = () => {
@@ -19,7 +18,6 @@ const SidebarComponent = () => {
   } = theme.useToken();
 
   return (
-    <div>
         <Layout>
         <Sider 
         collapsed={collapsed}
@@ -43,7 +41,6 @@ const SidebarComponent = () => {
           </Header>
         </Layout>
       </Layout>
-    </div>
   )
 }
 

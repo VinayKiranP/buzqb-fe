@@ -10,6 +10,7 @@ const WebComponent = () => {
   return (
     <main>
     <div>
+    <br/>
         <HomeComponent/>
         <AboutComponent/>
         <TestimonialComponent/>

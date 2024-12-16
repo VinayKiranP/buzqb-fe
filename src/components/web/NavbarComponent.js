@@ -14,7 +14,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
 import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
-import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
+// import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
 import { Link } from "react-scroll";
 import { Link as Redirect } from 'react-router-dom';
 import { nanoid } from "nanoid";
@@ -60,11 +60,11 @@ const NavbarComponent = () => {
         <img src={Logo} alt="" />
       </div>
       <div className="navbar-links-container">
-      {menuOptions?.map((item) => (
+        { menuOptions?.map((item) => (
           <Link to={item.name} smooth={true} duration={300}>
             {item.text}
           </Link>
-           ))}
+        ))}
           <Redirect to="/add-business" className="primary-button">Register Now</Redirect>
       </div>
       <div className="navbar-menu-container">

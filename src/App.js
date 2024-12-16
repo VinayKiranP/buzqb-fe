@@ -9,9 +9,7 @@ import LoginComponent from './components/auth/LoginComponent';
 function App() {
   return (
     <div className="App">
-      <br/>
       <Router>
-        <div>
           <Routes>
             <Route path='' element={<WebComponent/>}></Route>
             <Route path='/sidebar' element={<SidebarComponent/>}></Route>
@@ -20,7 +18,6 @@ function App() {
             <Route path='/add-business' element={<BusinessAddComponent/>}></Route>
             <Route path='/edit-business/:id' element={<BusinessAddComponent/>}></Route>
           </Routes>
-        </div>
       </Router>
     </div>
   );
