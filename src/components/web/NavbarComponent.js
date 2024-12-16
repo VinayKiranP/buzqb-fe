@@ -61,7 +61,7 @@ const NavbarComponent = () => {
       </div>
       <div className="navbar-links-container">
         { menuOptions?.map((item) => (
-          <Link to={item.name} smooth={true} duration={300}>
+          <Link key={item.id} to={item.name} smooth={true} duration={300}>
             {item.text}
           </Link>
         ))}
@@ -79,7 +79,7 @@ const NavbarComponent = () => {
         >
           <List>
             {menuOptions.map((item) => (
-            <Link to={item.name} smooth={true} duration={300}>
+            <Link key={item.id} to={item.name} smooth={true} duration={300}>
               <ListItem key={item.text} disablePadding>
                 <ListItemButton>
                   <ListItemIcon>{item.icon}</ListItemIcon>
