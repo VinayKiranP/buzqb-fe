@@ -47,6 +47,11 @@ nav {
   font-size: 1.1rem;
   font-weight: 600;
 }
+
+:global(.sidebar-aa) {
+  width: 100%;
+  max-width: 1900px;
+}
 .primary-button {
   padding: 0.75rem 1.5rem;
   background-color: white;
