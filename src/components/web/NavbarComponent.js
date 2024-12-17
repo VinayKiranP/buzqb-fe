@@ -55,8 +55,8 @@ const NavbarComponent = () => {
   ];
 
   return (
-    <header id="header" className="header-aa">
-    <nav>
+    <header id="header">
+    <nav className="header-aa">
       <div className="nav-logo-container">
         <img src={Logo} alt="" />
       </div>

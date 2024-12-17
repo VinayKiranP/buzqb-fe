@@ -10,15 +10,12 @@ import '../../Assets/styles/web.css'
 const WebComponent = () => {
   return (
     <main>
-    <div>
-    <br/>
         <HomeComponent/>
         <AboutComponent/>
         <TestimonialComponent/>
         <ContactComponent/>
         <WorkComponent/>
         <FooterComponent/>
-    </div>
   </main>
   )
 }
