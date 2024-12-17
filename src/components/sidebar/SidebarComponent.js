@@ -5,7 +5,7 @@ import ToggleThemeButtonComponent from '../sidebar/ToggleThemeButtonComponent';
 import { MenuUnfoldOutlined, MenuFoldOutlined } from '@ant-design/icons';
 import Logo from "../../Assets/Logo.svg";
 import BusinessListComponent from '../business/BusinessListComponent';
-import NavbarComponent from '../web/NavbarComponent';
+import DashboardComponent from '../business/DashboardComponent';
 
 const { Header, Sider } = Layout;
 const SidebarComponent = () => {
@@ -40,7 +40,7 @@ const SidebarComponent = () => {
         </Sider>
         <Layout theme={ darkTheme ? 'dark' : 'light'}>
           <Header style={{padding:0, background:colorBgContainer}}>
-          <NavbarComponent/>
+          <DashboardComponent/>
           </Header>
           <div className="">
             <BusinessListComponent/>
