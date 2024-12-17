@@ -470,7 +470,6 @@
     right: calc(-35px / 2);
     height: 35px;
     z-index: 1;
-    margin-top: 0.5rem;
   }
   .toggle-theme-btn {
     position: absolute;

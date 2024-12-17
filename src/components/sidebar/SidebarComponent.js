@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import { Layout, Button as AntButton, theme } from 'antd';
 import MenuListComponent from '../sidebar/MenuListComponent';
-import ToggleThemeButtonComponent from '../sidebar/ToggleThemeButtonComponent';
-import { MenuUnfoldOutlined, MenuFoldOutlined } from '@ant-design/icons';
+// import ToggleThemeButtonComponent from '../sidebar/ToggleThemeButtonComponent';
+import { DoubleRightOutlined, DoubleLeftOutlined } from '@ant-design/icons';
 import Logo from "../../Assets/Logo.svg";
 import BusinessListComponent from '../business/BusinessListComponent';
-import DashboardComponent from '../business/DashboardComponent';
+import DashboardHeaderComponent from '../business/DashboardHeaderComponent';
 
 const { Header, Sider } = Layout;
 const SidebarComponent = () => {
@@ -28,20 +28,21 @@ const SidebarComponent = () => {
         trigger={null}
         className="sidebar"
         theme={ darkTheme ? 'dark' : 'light'}>
+          <div className="logo">
+            <img src={Logo} alt="Home" className="logo-icon"/>
+          </div>
           <AntButton 
             type="text" 
             className="toggle" 
             onClick={() => setCollapsed(!collapsed)}
-            icon={ collapsed ? <MenuUnfoldOutlined/> : <MenuFoldOutlined/>}/>
-          <div className="logo">
-            <img src={Logo} alt="Home" className="logo-icon"/>
-          </div>
+            icon={ collapsed ? <DoubleRightOutlined/> : <DoubleLeftOutlined/>}/>
+          
           <MenuListComponent darkTheme={darkTheme}/>
           {/* <ToggleThemeButtonComponent darkTheme={darkTheme} toggleTheme={toggleTheme}/> */}
         </Sider>
         <Layout>
           <Header style={{padding:0, background:colorBgContainer}}>
-          <DashboardComponent/>
+          <DashboardHeaderComponent/>
           </Header>
           <div className="">
             <BusinessListComponent/>
