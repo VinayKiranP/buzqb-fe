@@ -8,7 +8,7 @@ import LoginComponent from './components/auth/LoginComponent';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Router>
           <Routes>
             <Route path='' element={<WebComponent/>}></Route>

@@ -9,7 +9,7 @@ import '../../Assets/styles/web.css'
 
 const WebComponent = () => {
   return (
-    <main>
+    <main className="App">
         <HomeComponent/>
         <AboutComponent/>
         <TestimonialComponent/>

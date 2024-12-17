@@ -20,25 +20,26 @@ const SidebarComponent = () => {
   } = theme.useToken();
 
   return (
-        <Layout>
+    <div className="Dashboard">
+        <Layout theme={ darkTheme ? 'dark' : 'light'}>
         <Sider 
         collapsed={collapsed}
         collapsible
         trigger={null}
         className="sidebar"
         theme={ darkTheme ? 'dark' : 'light'}>
-          <div className="logo">
-            <img src={Logo} alt="Home" className="logo-icon"/>
-          </div>
-          <MenuListComponent darkTheme={darkTheme}/>
-          <ToggleThemeButtonComponent darkTheme={darkTheme} toggleTheme={toggleTheme}/>
           <AntButton 
             type="text" 
             className="toggle" 
             onClick={() => setCollapsed(!collapsed)}
             icon={ collapsed ? <MenuUnfoldOutlined/> : <MenuFoldOutlined/>}/>
+          <div className="logo">
+            <img src={Logo} alt="Home" className="logo-icon"/>
+          </div>
+          <MenuListComponent darkTheme={darkTheme}/>
+          {/* <ToggleThemeButtonComponent darkTheme={darkTheme} toggleTheme={toggleTheme}/> */}
         </Sider>
-        <Layout theme={ darkTheme ? 'dark' : 'light'}>
+        <Layout>
           <Header style={{padding:0, background:colorBgContainer}}>
           <DashboardComponent/>
           </Header>
@@ -47,6 +48,7 @@ const SidebarComponent = () => {
           </div>
         </Layout>
       </Layout>
+      </div>
   )
 }
 
