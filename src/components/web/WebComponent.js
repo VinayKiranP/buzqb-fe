@@ -5,6 +5,7 @@ import TestimonialComponent from './TestimonialComponent';
 import ContactComponent  from './ContactComponent';
 import WorkComponent  from './WorkComponent';
 import FooterComponent  from './FooterComponent';
+import '../../Assets/styles/web.css'
 
 const WebComponent = () => {
   return (

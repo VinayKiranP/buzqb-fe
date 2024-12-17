@@ -55,7 +55,8 @@ const NavbarComponent = () => {
   ];
 
   return (
-    <nav id="header">
+    <header id="header" className="header-aa">
+    <nav>
       <div className="nav-logo-container">
         <img src={Logo} alt="" />
       </div>
@@ -93,6 +94,7 @@ const NavbarComponent = () => {
         </Box>
       </Drawer>
     </nav>
+    </header>
   );
 };
 
