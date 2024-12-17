@@ -9,7 +9,7 @@ import DashboardHeaderComponent from '../business/DashboardHeaderComponent';
 
 const { Header, Sider } = Layout;
 const SidebarComponent = () => {
-  const [collapsed, setCollapsed] = useState(false);
+  const [collapsed, setCollapsed] = useState(true);
   const [darkTheme, setDarkTheme] = useState(false);
   const toggleTheme = () => {
     setDarkTheme(!darkTheme);
