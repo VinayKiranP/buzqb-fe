@@ -5,7 +5,7 @@ import { Flex, Spin } from 'antd';
 const Loader = () => {
 
   return (
-      <div className="text-center">
+      <div className="loader">
         <Flex align="center" gap="middle">
           <Spin
             indicator={

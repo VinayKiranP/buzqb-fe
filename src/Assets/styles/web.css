@@ -63,7 +63,12 @@
     font-size: 1.1rem;
     font-weight: 600;
   }
-  
+  .loader {
+    display: flex;
+    justify-content: center;  /* Horizontally center */
+    align-items: center;
+    margin-top: 5px;
+  }
   :global(.sidebar-aa) {
     width: 100%;
     max-width: 1900px;

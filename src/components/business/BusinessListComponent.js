@@ -55,9 +55,9 @@ const deleteBusiness = () => {
   return (
     <>
     <div className="container">
-    { loading && <Loader/> }
     <h2>Business</h2>
       <Link to="/add-business" className="btn btn-primart mb-2">Add</Link>
+      { loading ? <Loader/> : 
       <table className="table table-bordered table-striped">
         <thead>
           <th>Id</th>
@@ -81,7 +81,8 @@ const deleteBusiness = () => {
             </tr>
           ))}
         </tbody>
-      </table>    
+      </table>
+      }
     </div>
     <Dialog
       open={open}
