@@ -69,6 +69,10 @@
     align-items: center;
     margin-top: 5px;
   }
+  .dashboard-redirect-btn {
+    display: flex;
+    justify-content: flex-end;
+  }
   :global(.sidebar-aa) {
     width: 100%;
     max-width: 1900px;

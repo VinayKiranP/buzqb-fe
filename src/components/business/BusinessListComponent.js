@@ -55,8 +55,8 @@ const deleteBusiness = () => {
   return (
     <>
     <div className="container">
-    <h2>Business</h2>
-      <Link to="/add-business" className="btn btn-primart mb-2">Add</Link>
+    <h2>BuzQb Business</h2>
+      <Link className="dashboard-redirect-btn" to="/add-business">Edit Business</Link>
       { loading ? <Loader/> : 
       <table className="table table-bordered table-striped">
         <thead>
